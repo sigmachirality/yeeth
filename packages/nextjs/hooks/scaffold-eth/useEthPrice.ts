@@ -10,7 +10,7 @@ const enablePolling = false;
  * Get the price of ETH based on ETH/DAI trading pair from Uniswap SDK
  * @returns ethPrice: number
  */
-export const useEthPrice = () => {
+export const useEthPrice = (): number => {
   const provider = useProvider({ chainId: 1 });
   const [ethPrice, setEthPrice] = useState(0);
 
